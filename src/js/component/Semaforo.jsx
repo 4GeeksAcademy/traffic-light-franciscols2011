@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 
 const Semaforo = () => {
-  const [color, setColor] = useState("red");
-
+  const [color, setColor] = useState("rojo");
+    
   return (
-    <>
-      <div className="linea-semaforo"></div>
+    <>      <div className="linea-semaforo"></div>
       <div className="semaforo">
         <div
           onClick={() => setColor("rojo")}
@@ -24,7 +23,8 @@ const Semaforo = () => {
           className={"color-verde" + (color === "verde" ? "-bordeluz" : "")}
         ></div>
       </div>
-    </>
+      </>
+
   );
 };
 
